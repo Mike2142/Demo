@@ -1,0 +1,76 @@
+html {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+
+}
+
+body {
+    margin: 80px 30%;
+}
+
+h3 {
+    width: 300px;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+
+p {
+    color: gray;
+    opacity: 0.8;
+    width: 100%;
+}
+
+div {
+    width: 500px;
+    margin-top: 20px;
+}
+
+#uploadFotoIcon {
+    display: inline-block;
+
+}
+
+#uploadFotoText {
+    display: inline-block;
+    width: 330px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#uploadAddressIcon {
+    display: inline-block;
+
+}
+
+#uploadAddressText {
+    display: inline-block;
+    width: 330px;
+    height: auto;
+    margin-left: 20px;
+}
+
+span {
+    color: gray;
+    opacity: 0.8;
+}
+
+input[type='file'] {
+    position: absolute;
+    left: -99999px;
+}
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#cancelled1, #cancelled2 {
+    color: red;
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+}
