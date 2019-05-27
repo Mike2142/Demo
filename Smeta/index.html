@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Smeta.cloud</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="MainController.js"></script>
+
+
+</head>
+<body ng-app="smetApp" >
+
+    <div class="main" ng-controller="MainController">
+
+        <img class="flagMen" src="image/Flag Men.png">
+
+        <div class="top">
+
+            <div class="logo">
+                <img class="icon" src="image/logo.png">
+
+            </div>
+
+            <div class="nav">
+                <ul class="navPanel">
+                    <li ng-repeat="option in options"><a>{{option}}</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="account">
+
+                <button class="login">Вход</button>
+                <button class="register">Регистрация</button>
+
+            </div>
+
+        </div>
+
+        <div class="nav2">
+            <ul class="navPanel2">
+                <li ng-repeat="option in options"><a>{{option}}</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="header">
+            <h3> {{proposal}} </h3>
+        </div>
+
+        <div class="button">
+            <button ng-click="giftRegister()" class="gift" id="gift">Получить бесплатный пакет</button>
+        </div>
+
+        <div class="bottom">
+
+            <div class="bottomNav">
+                <ul class="bottomNavPanel">
+                    <li ng-repeat="option in optionsBottom"><a>{{option}}</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="contacts">
+
+                <p class="contactText"><a>Контакты</a> | © 2014 ООО "Учет и право"</p>
+
+            </div>
+
+            <div class="bottomIcons">
+
+                <img class="visa" src="image/Visa.png">
+
+                <img class="uniteller" src="image/Uniteller.png">
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
