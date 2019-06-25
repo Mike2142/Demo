@@ -1,0 +1,540 @@
+html {
+    font-family: 'Istok Web', sans-serif;;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+body :hover {
+    cursor: default;
+}
+
+div.top {
+    background: linear-gradient(to right, #a30606 45.5%, #ffffff 45.5%);
+    height: 454px;
+    min-width: 1072px;
+}
+
+div.top1 {
+    height: 66px;
+    padding-top: 13px;
+}
+
+.logo1 {
+    display: inline-block;
+    margin-left: 19.1%;
+}
+
+.logo1 img {
+    width: 105px;
+}
+
+.logo1 img:hover {
+    cursor: pointer;
+}
+
+.address {
+    display: inline-block;
+    margin-left: 48.8px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.address img, .address p {
+    display: inline-block;
+    color: white;
+    font-size: 0.55em;
+}
+
+.address img {
+    width: 12px;
+}
+
+.address p {
+    line-height: 10px;
+}
+
+
+.callMe {
+    display: inline-block;
+    position: absolute;
+    margin-top: 3.4px;
+    left: 47%;
+    height: 56px;
+    vertical-align: middle;
+}
+
+.callMe button {
+    background: #a30606;
+    width: 130px;
+    height: 33px;
+    color: white;
+    font-size: 0.6em;
+    border: none;
+    outline: none;
+}
+
+.callMe button:hover {
+    color: #a30606;
+    background: white;
+    transition: 0.4s;
+    border: 1px solid #a30606;
+    cursor: pointer;
+}
+
+.logo2 {
+    display: inline-block;
+    float: right;
+    height: 50px;
+    margin-right: 19.7%;
+}
+
+.logo2 img {
+    width: 60px;
+    margin-top: 5px;
+}
+
+.logo2 img:hover {
+    cursor: pointer;
+}
+
+div.top2 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div.top2Text {
+    display: inline-block;
+    position: relative;
+    margin-top: 32px;
+    margin-left: 218px;
+    z-index: 2;
+}
+
+div.promo {
+    color: white;
+}
+
+div.promo p {
+    font-size: 1.2em;
+}
+
+
+div.promo h2 {
+    font-size: 1.7em;
+}
+
+div.top2 button {
+    margin-top: 17px;
+    width: 168px;
+    height: 35px;
+    color: #a30606;
+}
+
+div.top2 button:hover {
+    color: white;
+    background: #a30606;
+    border: 1px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.top2Cars {
+    display: inline-block;
+    position: absolute;
+    margin-left: -93px;
+
+    z-index: 0;
+}
+
+div.top2Cars img {
+    width: 610px;
+}
+
+div.top3 {
+    min-width: 1140px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 15.7%;
+    color: white;
+}
+
+.menu p {
+    padding-left: 41px;
+    font-size: 0.9em;
+}
+
+.navPanel {
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 27px;
+}
+
+.navPanel li {
+    display: inline-block;
+    font-size: 0.7em;
+    color: white;
+    line-height: 17.5px;
+    padding-right: 27px;
+}
+
+.navPanel a {
+    color: white;
+    text-decoration: none;
+}
+
+.navPanel a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.creditForm {
+    display: inline-block;
+    float: right;
+    margin-top: 105px;
+    margin-right: 29.1%;
+}
+
+.creditForm h2 {
+    font-size: 1.8em;
+}
+
+.creditForm p {
+    font-size: 0.6em;
+}
+
+.creditForm form {
+    margin-top: 21px;
+    position: absolute;
+    width: 390px;
+}
+
+form .phone {
+    width: 176px;
+    height: 30px;
+    outline: none;
+}
+
+form .phone:hover {
+    cursor: text;
+}
+
+form .submit {
+    margin-left: 15px;
+    width: 175px;
+    height: 29px;
+    background: #a30606;
+    color: white;
+    border: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.creditForm .submit:hover {
+    color: #a30606;
+    background: white;
+    border: 1px solid #a30606;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.middle {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+div.cars {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.car {
+    display: inline-block;
+    width: 370px;
+    height: 250px;
+    text-align: left;
+}
+
+#ceed {
+    margin-left: -16px;
+}
+
+div.photoCar {
+    display: inline-block;
+    height: 250px;
+}
+
+.photoCar h3 {
+    width: 130px;
+    position: absolute;
+    margin-top: 7px;
+    margin-left: -7px;
+}
+
+#new {
+    color: #a30606;
+}
+
+.photoCar img {
+    width: 220px;
+}
+
+div.textCar {
+    display: inline-block;
+    position: absolute;
+    width: 125px;
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
+.gift .wheelDiv {
+    display: inline-block;
+}
+
+.gift .wheel {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.gift .giftText {
+    display: inline-block;
+    text-align: left;
+    font-size: 0.6em;
+    line-height: 10px;
+    vertical-align: middle;
+}
+
+.textCar .discount {
+    margin-top: 7px;
+    font-size: 0.7em;
+    color: #a30606;
+}
+
+.textCar .rectangle {
+    width: 130px;
+    height: 25px;
+    border: 1px solid #a30606;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.textCar .rectangle p {
+    font-size: 0.60em;
+    color: #a30606;
+    padding: 5px;
+}
+
+.textCar .getDiscount {
+    margin-top: 6px;
+    width: 130px;
+    height: 25px;
+    border: none;
+    background: #a30606;
+    font-size: 0.5em;
+    color: white;
+    outline: none;
+}
+
+.getDiscount:hover {
+    color: #a30606;
+    background: white;
+    border: 1px solid #a30606;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.textCar .getOffer {
+    margin-top: 6px;
+    width: 130px;
+    height: 25px;
+    border: none;
+    background: #333333;
+    font-size: 0.5em;
+    color: white;
+    outline: none;
+}
+
+.getOffer:hover {
+    color: #333333;
+    background: white;
+    border: 1px solid #333333;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+div.bottom {
+    min-width: 1200px;
+}
+
+div.contacts {
+    margin-top: -48px;
+    width: 605px;
+    height: 185px;
+    position: relative;
+    float: right;
+    background: #a30606;
+    color: white;
+    padding-top: 14px ;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.contacts h3 {
+    font-size: 1.05em;
+    font-weight: normal;
+}
+
+.contacts p {
+    padding-top: 2px;
+    font-size: 0.65em;
+    line-height: 19px;
+}
+
+.contacts .inputBottom {
+    margin-top: 15px;
+    margin-left: -1px;
+    width: 172px;
+    height: 26px;
+    background: #a30606;
+    color: white;
+    outline: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.inputBottom:hover {
+    cursor: text;
+}
+
+.contacts .submitBottom {
+    margin-top: 7px;
+    margin-left: -2px;
+    width: 174px;
+    height: 27px;
+    color: #a30606;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.submitBottom:hover {
+    color: white;
+    background: #a30606;
+    border: 1px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.map {
+    width: 560px;
+    height: 220px;
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    margin-top: -63px;
+    margin-left: 19%;
+    margin-bottom: 37px;
+}
+
+div.popUp {
+    display: none;
+    text-align: center;
+}
+
+.popUp .getMoney {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.popUp .inputPop {
+    width: 172px;
+    height: 26px;
+    outline: none;
+    text-align: center;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.popUp .submitPop {
+    margin-top: 5px;
+    margin-left: -7px;
+    width: 174px;
+    height: 27px;
+    color: white;
+    font-size: 0.6em;
+    font-weight: normal;
+    background: #a30606;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.popUp .agreement {
+    margin-top: 5px;
+    font-size: 0.4em;
+    font-weight: normal;
+    color: #d8d8d8;
+    line-height: 1.2;
+    width: 170px;
+}
+
+@media (min-width: 1359px) {
+
+    div.contacts {
+        margin-top: -48px;
+        width: 55%;
+        height: 185px;
+        float: right;
+        background: #a30606;
+        color: white;
+        padding-top: 14px ;
+        padding-left: 20px;
+        position: relative;
+        z-index: 2;
+
+    }
+}
+
+@media (max-width: 1072px) {
+
+    .callMe {
+        display: inline-block;
+        position: relative;
+        margin-top: 3.2px;
+        margin-left: -480px; !important;
+        height: 56px;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 1130px) {
+
+    div.cars {
+        margin-left: 14.5%;
+    }
+
+}
+
