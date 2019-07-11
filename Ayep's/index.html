@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ayep's</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
+    <link href="styles.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+</head>
+
+<body>
+
+    <div class="top">
+
+        <div class="menu">
+
+            <div class="burger" onclick="burgerMenu()" id="burger">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div class="logo">
+                <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/"><img src="image/Лого.png"></a>
+            </div>
+
+            <div class="navPanel">
+                <ul class="nav">
+                    <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> О MiCE </li></a>
+                    <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> Реализованные проекты </li></a>
+                    <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> Популярные направления </li></a>
+                    <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> Отзывы </li></a>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <ul class="phone">
+                    <a style="text-decoration: none; color:#787878" href="facetime:14085551234">
+                        <li>8 (495) 989 10 98</li>
+                    </a>
+                    <li><a data-fancybox data-src="#hidden-content">Заказать звонок</a></li>
+                </ul>
+            </div>
+
+            <div class="phoneIcon">
+                <a href="facetime:14085551234">
+                    <svg  width="1cm" height="1cm"
+                     viewBox="0 0 578.106 578.106" style="enable-background:new 0 0 578.106 578.106;" xml:space="preserve">
+                        <path style="fill:#dcb378;" d="M577.83,456.128c1.225,9.385-1.635,17.545-8.568,24.48l-81.396,80.781
+                            c-3.672,4.08-8.465,7.551-14.381,10.404c-5.916,2.857-11.729,4.693-17.439,5.508c-0.408,0-1.635,0.105-3.676,0.309
+                            c-2.037,0.203-4.689,0.307-7.953,0.307c-7.754,0-20.301-1.326-37.641-3.979s-38.555-9.182-63.645-19.584
+                            c-25.096-10.404-53.553-26.012-85.376-46.818c-31.823-20.805-65.688-49.367-101.592-85.68
+                            c-28.56-28.152-52.224-55.08-70.992-80.783c-18.768-25.705-33.864-49.471-45.288-71.299
+                            c-11.425-21.828-19.993-41.616-25.705-59.364S4.59,177.362,2.55,164.51s-2.856-22.95-2.448-30.294
+                            c0.408-7.344,0.612-11.424,0.612-12.24c0.816-5.712,2.652-11.526,5.508-17.442s6.324-10.71,10.404-14.382L98.022,8.756
+                            c5.712-5.712,12.24-8.568,19.584-8.568c5.304,0,9.996,1.53,14.076,4.59s7.548,6.834,10.404,11.322l65.484,124.236
+                            c3.672,6.528,4.692,13.668,3.06,21.42c-1.632,7.752-5.1,14.28-10.404,19.584l-29.988,29.988c-0.816,0.816-1.53,2.142-2.142,3.978
+                            s-0.918,3.366-0.918,4.59c1.632,8.568,5.304,18.36,11.016,29.376c4.896,9.792,12.444,21.726,22.644,35.802
+                            s24.684,30.293,43.452,48.653c18.36,18.77,34.68,33.354,48.96,43.76c14.277,10.4,26.215,18.053,35.803,22.949
+                            c9.588,4.896,16.932,7.854,22.031,8.871l7.648,1.531c0.816,0,2.145-0.307,3.979-0.918c1.836-0.613,3.162-1.326,3.979-2.143
+                            l34.883-35.496c7.348-6.527,15.912-9.791,25.705-9.791c6.938,0,12.443,1.223,16.523,3.672h0.611l118.115,69.768
+                            C571.098,441.238,576.197,447.968,577.83,456.128z"/>
+
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="mobileMenu" id="mobileMenu">
+
+            <ul class="mobileNav">
+                <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> О MiCE </li></a>
+                <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> Реализованные проекты </li></a>
+                <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> Популярные направления </li></a>
+                <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"><li> Отзывы </li></a>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="middle1">
+
+        <div class="middle1Inner">
+
+            <div class="middle1Text">
+
+                <h1>Проведите яркое <br class="br1"> <span>корпоративное мероприятие за рубежом</span> <br class="br2">
+                    и сократите расходы компании на организацию ивента до 30% <span2>*</span2></h1>
+
+                <img src="image/Text line.png">
+
+                <p>Индивидуальная разработка, проведение и сопровождение
+                    выездных <br class="br3"> MICE-мероприятий "под ключ" от экспертов в сфере делового туризма</p>
+                <a data-fancybox data-src="#hidden-content"> <button>Бесплатная консультация</button></a>
+                <p id="star">*Благодаря нашим партнерским скидкам</p>
+
+            </div>
+
+            <div class="video">
+                <video autoplay playsinline muted loop preload>
+                    <source src="image/Vatican_Sunset_2.mp4" />
+                </video>
+            </div>
+
+            <svg width="0" height="0">
+                <defs>
+                    <clipPath id="clipPath" clipPathUnits="objectBoundingBox" transform="scale(0.001333, 0.002659)">
+                        <path
+                                d="
+                            M297.033,-0.002
+
+                            L426.000,-0.002
+
+                            L65.343,760.998
+
+                            L-57.376,760.998
+
+                            L297.033,-0.002
+
+
+                            M290.033,-0.002
+
+                            L558.000,-0.002
+
+                            L198.343,760.998
+
+                            L67.343,760.998
+
+                            L430.033,-0.002
+
+
+                            M561.033,-0.002
+
+                            L584.343,-0.002
+
+                            L582.343,230.000
+
+                            L320.343,760.998
+
+                            L202.343,760.998
+
+                            L561.033,-0.002
+
+
+
+                         Z"/>
+
+                    </clipPath>
+                </defs>
+            </svg>
+
+        </div>
+    </div>
+
+    <div class="middle2">
+
+        <div class="middle2blue">
+
+            <h1 class="middle2">Получите лучшую идею <br class="br4"> проведения вашего мероприятия <br class="br5">
+                и прогноз стоимости уже через 30 минут!</h1>
+            <img src="image/Text line.png">
+
+            <form action="" onsubmit="fancyThanks(); return false">
+
+                <input class="field1" type="text" id="name" name="name" placeholder="Имя"
+                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Имя'" minlength="2" maxlength="10"
+                       data-inputmask="'mask': 'a{0,12}'" required>
+
+                <input class="field1" type="tel" id="phone" name="phone" placeholder="Телефон"
+                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Телефон'" required>
+
+                <select class="field1" id="event" name="event" onblur="selectFunction1()" required>
+                    <option value="" disabled selected>Вид мероприятия</option>
+                    <option value="pool">Вечеринка у бассейна</option>
+                    <option value="dance">Танцевальный марафон</option>
+                    <option value="run">Триатлон</option>
+                </select>
+
+                <input class="field2" type="number" min="1" max="200" id="people" name="people" placeholder="Кол-во людей"
+                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кол-во людей'" required>
+
+                <input class="field2" type="number" min="1" max="30" id="days" name="days" placeholder="Кол-во дней"
+                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Кол-во дней'" required>
+
+                <input class="field1" type="text" id="date" name="date" placeholder="Ориентировочная дата"
+                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ориентировочная дата'" required>
+
+                <select class="field1" id="country" name="country" onblur="selectFunction2()" required>
+                    <option value="" disabled selected>Место проведения</option>
+                    <option value="canary">Канарские острова</option>
+                    <option value="sri-lanka">Шри-Ланка</option>
+                    <option value="bali">Остров Бали</option>
+                </select>
+
+                <br>
+                <input class="submit" id="submit" type="submit" value="Получить">
+
+            </form>
+        </div>
+    </div>
+
+    <div class="bottom">
+
+        <div class="bottomInner">
+
+            <div class="bottomHeader">
+                <h1>Почему нас выбирают</h1>
+                <img src="image/Text line.png">
+            </div>
+
+            <div class="sliderSlick">
+
+                <div class="tab1" id="tab1">
+
+                    <div class="tab1Img">
+                        <img src="image/tab pic1.png">
+                    </div>
+
+                    <div class="tab1Text">
+
+                        <h3>100% внимания вашему проекту</h3>
+
+                        <p>Создаем отдельную рабочую группу, которая занимается реализацией
+                            исключительно вашего мероприятия. Мы гарантируем, что ваш <br class="br6"> корпоративный выезд
+                            пройдет по плану и обязательно понравится партнерам, сотрудникам и руководству.
+                        </p>
+
+                     </div>
+
+                </div>
+
+                <div class="tab2" id="tab2">
+
+                    <div class="tab2Text">
+
+                        <h3>Работаем так, чтобы не тратить ваше время</h3>
+
+                        <p>Подготовка и организация мероприятия лежит полностью на плечах нашей команды,
+                            чтобы не отвлекать вас от важных задач. Ваше участие требуется только на этапе согласования
+                            концепта, утверждения сметы и подписания договора.
+                        </p>
+
+                    </div>
+
+                    <div class="tab2Img">
+                        <img src="image/tab pic2.png">
+                    </div>
+
+                </div>
+
+                <div class="tab3" id="tab3">
+
+                    <div class="tab1Img">
+                        <img src="image/tab pic3.png">
+                    </div>
+
+                    <div class="tab3Text">
+
+                        <h3>Контролируем все процессы</h3>
+
+                        <p>Предоставляем персонального администратора на ваше мероприятие,
+                            который летит вместе с вами и полностью координирует все процессы на месте.
+                            Работайте, отдыхайте и налаживайте деловые связи, <br class="br7"> не отвлекаясь на мелочи.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="tab4" id="tab4">
+
+                    <div class="tab2Text">
+
+                        <h3>Экономим бюджет компании</h3>
+
+                        <p>Имеем собственную базу надежных подрядчиков и выгодные партнерские скидки
+                            от 10 туроператоров и 75 отелей по всему миру, благодаря которым
+                            ваша компания сможет уменьшить расходы <br class="br8"> на организацию выездного мероприятия.
+                        </p>
+
+                    </div>
+
+                    <div class="tab2Img">
+                        <img src="image/tab pic4.png">
+                    </div>
+
+                </div>
+
+                <div class="tab5" id="tab5">
+
+                    <div class="tab1Img">
+                        <img src="image/tab pic5.png">
+                    </div>
+
+                    <div class="tab5Text">
+
+                        <h3>Предотвращаем неловкие ситуации</h3>
+
+                        <p>Мы знаем, кому позвонить в 2 часа ночи, чтобы утром буклеты были готовы.
+                            Проконтролируем, чтобы у вашего бизнес-партнера с аллергией на петрушку
+                            <br class="br9"> ее случайно не оказалось в тарелке.
+                            <br class="br10">Оперативно организуем впечатляющее шоу, если ваш главный спикер внезапно
+                            слег от простуды.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="navButtons">
+                <button type="button" onclick="slickPrev()">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="1.87cm" height="0.706cm">
+                    <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+                          d="M53.000,10.625 L1.402,10.625 L9.946,19.405 L9.360,20.007 L0.232,10.625 L-0.000,10.625 L-0.000,10.386 L-0.009,10.377 L-0.000,10.369 L-0.000,9.781 L0.150,9.781 L-0.009,9.619 L9.360,-0.010 L9.946,0.591 L1.003,9.781 L53.000,9.781 L53.000,10.625 Z"/>
+                    </svg>
+
+                </button>
+
+                <button type="button" onclick="slickNext()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="1.87cm" height="0.706cm">
+                    <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+                          d="M53.000,9.781 L53.000,10.369 L53.009,10.377 L53.000,10.386 L53.000,10.625 L52.768,10.625 L43.639,20.007 L43.054,19.405 L51.597,10.625 L0.000,10.625 L0.000,9.781 L51.997,9.781 L43.054,0.591 L43.639,-0.010 L53.009,9.619 L52.850,9.781 L53.000,9.781 Z"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="footerInner">
+            <div class="agreement">
+                <a href="https://xn--80aagddgclk3cbeigbq3arb4g.xn--p1ai/mice/" target="_blank"">Пользовательское соглашение</a>
+            </div>
+
+            <div class="logoRights">
+
+                <div class="logoFooter">
+                    <a href="https://ayeps.ru/" target="_blank"><img src="image/icon Ayeps.png"></a>
+                </div>
+
+                <div class="rights">
+                    <p>Разработано в AEYP'S <br>
+                        2019 &#9400 Все права защищены</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popUp" id="hidden-content">
+
+        <p class="callBack"> Обратный звонок </p>
+        <form onsubmit="fancyThanks(); return false" >
+
+            <input class="inputPop" type="text" id="name" name="name" placeholder="Ваше имя"
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ваше имя'" minlength="2" maxlength="10"
+                   data-inputmask="'mask': 'a{0,12}'"  required >
+
+            <input class="inputPop" type="tel" placeholder="Телефон"
+                   onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите номер'"
+                    required>
+
+            <p class="agreement">Нажимая "Заказать", вы даёте согласие на обработку своих
+                персональных данных в соответствии с Федеральным законом №152-ФЗ
+                «О персональных данных» и принимаете условия Пользовательского соглашения</p>
+
+            <input class="submitPop" type="submit" value="Заказать" autofocus >
+        </form>
+
+    </div>
+
+    <div class="popUp" id="hidden-content2" onclick="$.fancybox.close()">
+
+        <p class="thanks1"> Спасибо, Ваша заявка зарегистрирована</p>
+
+        <p class="thanks2"> Наш менеджер свяжется с вами в ближайшее время</p>
+
+    </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script src="Input mask/dist/jquery.inputmask.bundle.js"></script>
+
+<script src="Input mask/dist/inputmask/bindings/inputmask.binding.js"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
