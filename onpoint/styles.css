@@ -1,0 +1,584 @@
+html {
+    font-family: "Gotham Pro Regular", sans-serif;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Gotham Pro Light;
+    src: url(Fonts/GothaProLig.otf);
+}
+
+@font-face {
+    font-family: Gotham Pro Medium;
+    src: url(Fonts/GothaProMed.otf);
+}
+
+@font-face {
+    font-family: Gotham Pro Regular;
+    src: url(Fonts/GothaProReg.otf);
+}
+
+@font-face {
+    font-family: Lato Regular;
+    src: url(Fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato Light;
+    src: url(Fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato Thin;
+    src: url(Fonts/Lato-Thin.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+div.main {
+    background: url("images/Back Top clean.png") no-repeat;
+    background-size: contain;
+    height: 2300px;
+}
+
+.pagination {
+    position:fixed;
+    right:23px;
+    top: 47%;
+    transform: translateY(-50%);
+    font-size:1.4em;
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+}
+
+.pagination a {
+    display:block;
+    height:9px;
+    margin-bottom:5px;
+    color:white;
+    position:relative;
+    padding:3px;
+}
+.pagination a.active:after {
+    border: 1px solid #f78b1f;
+    background: #f78b1f;
+}
+
+.pagination a .hover-text {
+    position:absolute;
+    right:15px;
+    top:7px;
+    opacity:0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+}
+.pagination a:hover .hover-text {
+    opacity: 0;
+}
+.pagination a:after {
+    -webkit-transition:box-shadow 0.5s ease;
+    transition:box-shadow 0.5s ease;
+    width:11px;
+    height:11px;
+    display: block;
+    border: 1px solid;
+    background: white;
+    border-radius:50%;
+    content:'';
+    position: absolute;
+    margin:auto;
+    top:0;
+    right:4px;
+    bottom:0;
+}
+
+/*   Pagination Over   */
+
+
+h1.top {
+    font-size: 49px;
+    font-weight: 200;
+    line-height: 1.2;
+    color: #0d319c;
+    position: absolute;
+    margin: 140px 0 0 70px;
+}
+
+p {
+    position: absolute;
+    color: #0d319c;
+    font-size: 1.2em;
+}
+
+p.dot1 {
+    margin: 398px 0 0 220px;
+}
+
+
+.border1 {
+    height: 29px;
+    width: 29px;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.4);
+    position: absolute;
+    text-align: center;
+
+    margin: 425.5px 0 0 272.5px;
+}
+
+.border1I {
+    position: relative;
+    height: 29px;
+    width: 29px;
+}
+
+.nuke1 {
+    height: 11px;
+    width: 11px;
+    background-image: radial-gradient(#d7a571, #b0637e);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+
+    top: 50%;
+    left: 50%;
+    margin: -5.5px 0px 0px -5.5px;
+
+}
+
+
+.ring1 {
+
+    height: 29px;
+    width: 29px;
+    margin: 425.5px 0 0 272.5px;
+
+
+    animation: blink1 2s infinite;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes blink1 {
+    from {
+        transform: scaleY(0.3) scaleX(0.3)
+    }
+    to {
+        transform: scaleY(1) scaleX(1)
+    }
+}
+
+.ring1I {
+
+    height: 29px;
+    width: 29px;
+    margin: 425.5px 0 0 272.5px;
+
+
+    animation: blink1I 2s infinite;
+    animation-delay: 1s;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes blink1I {
+    from {
+        transform: scaleY(0.3) scaleX(0.3)
+    }
+    to {
+        transform: scaleY(1) scaleX(1)
+    }
+}
+
+p.dot2 {
+    margin: 510px 0 0 365px;
+}
+
+.border2 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.4);
+    position: absolute;
+    text-align: center;
+
+    margin: 538px 0 0 478px;
+}
+
+.border2I {
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+
+.nuke2 {
+    height: 8px;
+    width: 8px;
+    background-image: radial-gradient(#d7a571, #b0637e);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+}
+
+.ring2 {
+
+    height: 15px;
+    width: 15px;
+    margin: 538px 0 0 478px;
+
+
+    animation: blink1 2s infinite;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+    transition-delay: 1s
+
+}
+
+.ring2I {
+
+    height: 15px;
+    width: 15px;
+    margin: 538px 0 0 478px;
+
+
+    animation: blink1I 2s infinite;
+    animation-delay: 1s;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+
+}
+
+p.dot3 {
+    margin: 280px 0 0 624px;
+}
+
+.border3 {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.4);
+    position: absolute;
+    text-align: center;
+
+    margin: 262px 0 0 561px;
+}
+
+.border3I {
+    position: relative;
+    height: 52px;
+    width: 52px;
+}
+
+.nuke3 {
+    height: 17px;
+    width: 17px;
+    background-image: radial-gradient(#d7a571, #b0637e);
+    border-radius: 50%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    margin: -8.5px 0px 0px -8.5px;
+}
+
+
+.ring3 {
+
+    height: 52px;
+    width: 52px;
+    margin: 262px 0 0 561px;
+
+
+    animation: blink1 2s infinite;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+    transition-delay: 1s
+}
+
+.ring3I {
+
+    height: 52px;
+    width: 52px;
+    margin: 262px 0 0 561px;
+
+
+    animation: blink1I 2s infinite;
+    animation-delay: 1s;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+p.dot4 {
+    margin: 490px 0 0 790px;
+}
+
+.border4 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.4);
+    position: absolute;
+    text-align: center;
+
+    margin: 516px 0 0 822px;
+}
+
+.border4I {
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+
+.nuke4 {
+    height: 6px;
+    width: 6px;
+    background-image: radial-gradient(#d7a571, #b0637e);
+    border-radius: 50%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    margin: -3px 0px 0px -3px;
+}
+
+
+.ring4 {
+
+    height: 15px;
+    width: 15px;
+    margin: 516px 0 0 822px;
+
+
+    animation: blink1 2s infinite;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+    transition-delay: 1s
+}
+
+.ring4I {
+
+    height: 15px;
+    width: 15px;
+    margin: 516px 0 0 822px;
+
+
+    animation: blink1I 2s infinite;
+    animation-delay: 1s;
+    border-radius: 50%;
+    border: 0.5px solid rgba(200, 25, 53, 0.8);
+    background-color: rgba(215, 165, 113, 0.2);
+    position: absolute;
+    z-index: 1;
+}
+
+img.next {
+    position: fixed;
+    width: 1000px;
+    height: auto;
+    margin-top: 650px;
+}
+
+img.middleIce4 {
+    position: absolute;
+    width: 80px;
+    margin: 590px 0 0 710px;
+    opacity: 0.8;
+}
+
+img.middleIce3 {
+    position: absolute;
+    width: 40px;
+    margin: 160px 0 0 80px;
+    opacity: 1;
+}
+
+img.middleIce2 {
+    position: absolute;
+    width: 100px;
+    margin: 445px 0 0 235px;
+    opacity: 1;
+}
+
+img.middleIce1 {
+    position: absolute;
+    width: 150px;
+    margin: 35px 0 0 872px;
+    opacity: 1;
+}
+
+.middle2Header {
+    position: absolute;
+    width: 545px;
+    margin-top: 205px;
+    margin-left: 235px;
+}
+
+/*
+h1.middle {
+    font-size: 49px;
+    font-family: "Gotham Pro Light";
+    font-weight: 100;
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+    position: absolute;
+    margin: 250px 0 0 280px;
+}
+*/
+
+div.sliderSlick {
+    width: 100%;
+    height: auto;
+    margin-top: -10px;
+}
+
+div.tab1 {
+    background: url("images/tab1.png") no-repeat;
+    background-size: contain;
+    width: 900px;
+    height: auto;
+    margin: -3px 0 0 0px;
+}
+
+img.iceTab1 {
+    width: 920px;
+    height: 700px;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+
+
+div.tab2 {
+    background: url("images/tab2.png") no-repeat;
+    background-size: contain;
+    width: 900px;
+    height: auto;
+    margin: -3px 0 0 0px;
+}
+
+img.iceTab2 {
+    width: 1000px;
+    margin-top: 95px;
+    margin-left: 26px;
+}
+
+div.tab3 {
+    background: url("images/tab3.png") no-repeat;
+    background-size: contain;
+    width: 700px;
+    height: auto;
+    margin: 0 0 0 0;
+}
+
+img.iceTab3 {
+    width: 1000px;
+    margin-top: 15px;
+    margin-left: 22px;
+}
+
+div.slideContainer {
+    width: 100%;
+    margin-top: -18px;
+}
+
+div.sliderCont {
+    width: 650px;
+}
+
+input[type='range'] {
+    width: 650px;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        -webkit-appearance: none;
+        appearance: none;
+        background: #435063;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+
+        margin-top: -95px;
+        margin-left: 200px;
+        position: absolute;
+
+        overflow: hidden;
+
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 15px;
+        -webkit-appearance: none;
+        color: #d1eaff;
+        margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50px;
+        height: 15px;
+        background: linear-gradient(to top, #d7a571, #b0637e);
+        color: #d1eaff;
+        background-size: contain;
+        cursor: pointer;
+        outline: none;
+        z-index: 400;
+        margin-left: 10px;
+    }
+
+}
+
+p.year1, .year2, .year3 {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    margin-top: -50px;
+}
+
+p.year1 {
+    margin-left: 190px;
+}
+
+p.year2 {
+    margin-left: 490px;
+}
+
+p.year3 {
+    margin-left: 790px;
+}
