@@ -1,0 +1,107 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.header {
+  border-bottom: 1px solid $base-brown;
+  justify-content: center;
+
+  position: relative;
+  z-index: 7;
+  background: white;
+
+  &__row {
+    justify-content: space-between;
+  }
+
+  &__menu-div {
+    padding: 0;
+  }
+
+  &__menu {
+    padding-left: 6px;
+  }
+
+  &__menu-link {
+    color: black;
+    font-size: 0.85em;
+    padding: 10px 52px 10px 0px ;
+
+    &:hover {
+      color: $base-brown;
+    }
+
+    @include media-down-lg {
+      padding-right: 25px;
+    }
+
+  }
+
+  &__user-div {
+    font-size: 0.85em;
+
+    @include media-down-md {
+      height: 60px;
+    }
+  }
+
+  &__account{
+    padding: 11px 43px 9px 40px;
+    border-width: 0 1px 0 1px;
+    border-color: $base-brown;
+    border-style: solid;
+
+    &:hover {
+      color: $base-brown;
+      cursor: pointer;
+    }
+
+    @include media-down-md {
+      height: 60px;
+      padding-top: 20px;
+    }
+
+    @include  media-down-xs {
+      padding: 20px 15px 0 15px;
+    }
+  }
+
+  &__favorite{
+    padding: 10.6px 39px 0 43px;
+
+    &:hover {
+      color: $base-brown;
+      cursor: pointer;
+    }
+
+    @include media-down-md {
+      height: 60px;
+      padding-top: 20px;
+    }
+
+    @include  media-down-xs {
+      padding: 20px 15px 0 15px;
+    }
+  }
+
+  &__circle{
+    display: inline-block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius:100%;
+    margin: 0 0 0 -2px;
+    top: 5px;
+    background: $base-brown;
+    padding: 0.5px 0;
+
+    font-size: 0.65rem;
+    color: white;
+    text-align: center;
+
+    @include media-down-md {
+      display: none;
+    }
+  }
+}
+
+

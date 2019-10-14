@@ -1,0 +1,48 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.slider-specials {
+  padding: 4px 0 0 0;
+
+  &__h2 {
+    padding-bottom: 25px;
+  }
+
+  &__slider {
+    display: inline-block;
+    width: 93%;
+  }
+}
+
+.slider-specials {
+
+  &__tab1_align {
+    padding: 5px 0 0 0;
+    margin-left: -6px;
+  }
+
+  &__tab1-img {
+    padding: 0 0 11px 0;
+  }
+
+  &__tab2-img {
+    padding: 0 0 10px 0;
+  }
+
+  &__tab3-img {
+    padding: 0 0 15px 0;
+  }
+
+  &__tab3-name {
+    line-height: 1.1;
+  }
+
+  &__tab4-img {
+    margin-top: -6px;
+  }
+
+  &__prev-button, &__next-button {
+    margin-top: -17px;
+  }
+
+}

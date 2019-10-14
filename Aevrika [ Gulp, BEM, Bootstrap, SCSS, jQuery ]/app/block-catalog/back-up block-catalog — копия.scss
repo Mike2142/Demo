@@ -1,0 +1,175 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.block-catalog {
+  background: linear-gradient(90deg, #302a31 89%, #c16774 11%);
+  justify-content: center;
+
+  @include  media-down-md {
+    background: #302a31;
+  }
+
+  &__inner {
+    padding: 0 0 0 8px;
+    height: auto;
+  }
+
+  &__nav {
+    background: #302a31;
+    display: inline-flex;
+    z-index: 3;
+
+    flex-flow: wrap;
+    width: 92.5%;
+
+    @include media-down-md {
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include media-down-xs {
+      justify-content: normal;
+      flex-flow: column;
+
+      position: absolute;
+      z-index: 4;
+
+      width: 100%;
+      left: 0;
+      top: -1100px;
+      transition: 0.5s;
+      padding-left: 11px;
+    }
+  }
+
+  &__nav-link {
+    background: #302a31;
+    z-index: 2;
+    color: white;
+    letter-spacing: 0.4px;
+    padding: 19.5px 56px 17px 0;
+
+    //height: 20px;
+    display: flex;
+
+    &:hover {
+      color: $base-brown;
+      text-decoration: none;
+    }
+
+    @include media-down-md {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    @include media-down-xs {
+      width: 45%;
+      padding-left: 30px;
+
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__nav-link_hidden {
+    color: #c16774;
+  }
+
+  &__nav-link_font-brown {
+    color: $base-brown;
+  }
+
+  &__nav-presents {
+    background: #302a31;
+    //z-index: 2;
+    color: white;
+    letter-spacing: 0.4px;
+    padding: 19.5px 40px 17px 0;
+    display: inline-flex;
+
+    &:hover {
+      color: $base-brown;
+      text-decoration: none;
+    }
+
+    @include media-down-md {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+    @include media-down-xs {
+      width: 45%;
+      padding-left: 30px;
+    }
+  }
+
+  &__drop-menu {
+    padding-top: 21px;
+    margin-top: -2px;
+    margin-left: -2.4%;
+    border-width: 3px 0 0 0;
+    border-color: $base-brown;
+    border-radius: 0;
+    box-shadow: 2px 2px 5px 0.1px rgba(0, 0, 0, 0.1);
+
+    //transition: 1s;
+
+    @include media-down-xs {
+      border-width: 5px 5px 5px 5px;
+      margin-right: 5px;
+
+      float: right;
+      width: 50%;
+    }
+  }
+
+  &__drop-menu-item {
+    font-size: 1.0rem;
+    letter-spacing: 0.4px;
+
+    padding: 0px 28px 13px 27px;
+
+    @include media-down-xs {
+      //display: flex;
+      display: block;
+      //width: 20px;
+      padding: 0 0 10px 10px;
+    }
+  }
+
+  &__sale {
+    display: inline-block;
+    float: right;
+    color: white;
+    //background: #c16774;
+    z-index: 2;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 19.5px 8px 0 0;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+      text-shadow: 0 0 17px white;
+    }
+
+    @include median-down-1437 {
+      padding-top: 40px;
+      padding-right: 0px;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__catalog-drop-link {
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 20px;
+
+
+    &:hover {
+      color: $base-brown;
+    }
+  }
+
+}
