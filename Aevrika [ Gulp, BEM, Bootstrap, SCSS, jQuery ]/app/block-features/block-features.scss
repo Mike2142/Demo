@@ -1,0 +1,41 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.block-features {
+  justify-content: center;
+
+  @include  media-down-md {
+    display: none;
+  }
+
+  &__feature-column {
+    padding: 0;
+    display: flex;
+  }
+
+  &__line {
+    display: inline-block;
+    width: 27%;
+    height: 15px;
+
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #eceaed;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 200px;
+    padding: 8.2px 0 0 28.7px;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    line-height: 1.6;
+
+    @include media-down-lg {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,202 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.slider-main {
+  margin: 0;
+  padding: 0 0 20px 0;
+
+  @include media-down-sm {
+    display: none;
+  }
+
+  &__inner {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  &__slider {
+    padding: 0 0 0 0;
+    margin-left: -6px;
+
+    @include media-down-md{
+      margin-left: 0;
+    }
+  }
+
+  &__tab {
+    padding: 41px 0 0 0;
+    overflow: hidden;
+    margin-left: -1px;
+
+    @include media-down-md {
+      margin-left: -2px;
+      padding-left: 40px;
+    }
+  }
+
+  &__h1 {
+    position: absolute;
+    z-index: 3;
+    top: 208px;
+    font-size: 2.65rem;
+    letter-spacing: 5px;
+    line-height: 1.61;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+
+    @include media-down-md {
+      top: 180px;
+      font-size: 1.8rem;
+      letter-spacing: 2.5px;
+    }
+  }
+
+  &__brand {
+    letter-spacing: 4.2px;
+    font-size: 2.65rem;
+
+    @include media-down-md {
+      font-size: 1.8rem;
+      letter-spacing: 2.5px;
+    }
+  }
+
+  &__p {
+    position: absolute;
+    z-index: 1;
+
+    top: 397px;
+    width: 500px;
+
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: $base-brown;
+
+    text-transform: uppercase;
+    font-size: 0.63rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: $base-brown;
+
+    padding-bottom: 15px;
+
+    &:hover {
+      text-shadow: 0 0 17px #c1a067;
+      cursor: pointer;
+    }
+  }
+
+  &__image-wrap {
+    height: 487px;
+    margin-top: 21px;
+    padding: 0;
+    margin-left: 17%;
+    position: relative;
+    z-index: 2;
+
+    background-image:  url("images/slider-main__img.png");
+    background-image: linear-gradient(90deg, rgba(235,235,235,1), rgba(235,235,235,0) 65%), url("../images/slider-main__img.png");
+    background-repeat: no-repeat;
+
+    @include media-down-md {
+      width: 640px;
+      margin-left: 35%;
+      background-position: center;
+
+    }
+  }
+
+  .slick-dots {
+    position: absolute;
+    z-index: 3;
+    top: 89.2%;
+    left: -25.4%;
+    display: flex;
+    justify-content: center;
+
+    list-style-type: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+      height: 8px;
+      width: 41px;
+      text-align: center;
+
+      @include media-down-md {
+        width: 25px;
+      }
+    }
+
+    button {
+      display: block;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      margin: 0 auto;
+
+      border: 1.7px solid $base-brown;
+      border-radius: 0;
+      background-color: transparent;
+
+      text-indent: -9999px;
+
+      @include media-down-md {
+        width: 10px;
+        height: 10px;
+
+      }
+
+    }
+
+    li.slick-active button {
+      background-color: $base-brown;
+    }
+
+  }
+
+  &__recommend {
+    position: absolute;
+    right: 50px;
+    margin-top: 42px;
+    width: 330px;
+
+    background: #f9f9f9;
+    overflow: visible;
+
+    @include media-down-1230 {
+      display: none;
+    }
+  }
+
+  &__h3 {
+    width: 334px;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: $base-brown;
+
+    font-size: 1rem;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 43px 0 33px 0;
+    margin-left: 45.5px;
+  }
+
+  &__nav {
+    list-style: none;
+    padding: 34px 0 21px 0;
+  }
+
+  &__nav-item:hover {
+    cursor: pointer;
+    color: #c16774;
+  }
+
+  &__nav-link {
+    display: block;
+    letter-spacing: 0.45px;
+    padding: 0 0 12px 46px;
+  }
+}

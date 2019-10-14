@@ -1,0 +1,211 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.slider-hits {
+
+  padding: 0 0 19px 0;
+
+  @include media-down-md {
+    justify-content: center;
+  }
+
+  &__h2 {
+    display: block;
+    width: 418px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 66px 0 15px 0;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+
+    border-width: 0 0 2.2px 0;
+    border-style: solid;
+    border-color: $base-brown;
+
+    @include media-down-sm {
+      font-size: 1.5rem;
+      width: 300px;
+    }
+
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 70px;
+  }
+
+  &__prev, &__next {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__slider {
+    display: inline-block;
+    width: 93%;
+  }
+
+  &__tab {
+    text-align: center;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #eceaed;
+    padding: 0px 0 0 0;
+
+    @include media-down-md {
+      border: none;
+    }
+  }
+
+  &__tab1_align {
+    padding-right: 13px;
+    margin-top: -7px;
+  }
+
+  &__tab2_align {
+    padding: 4px 9px 0 0;
+  }
+
+  &__tab3_align {
+    padding: 5px 5px 0 0;
+  }
+
+  &__tab4_align {
+    padding-top: 16px;
+  }
+
+  &__sale-icon {
+    position: absolute;
+    width: 47px;
+    height: 22px;
+    margin: 8px 0 0 4px;
+    background: $base-red;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 4px 0 0 0;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__img_tab2-3 {
+    padding: 0 0 12px 0;
+  }
+
+  &__img_tab4 {
+    padding: 0 0 25px 0;
+  }
+
+  &__name {
+    padding: 24.6px 0 0 0;
+    margin: 0;
+
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+  }
+
+  &__description {
+    padding: 16px 0 0 0;
+    margin: 0;
+
+    font-size: 0.9rem;
+    letter-spacing: -0.3px;
+  }
+
+  &__price {
+    padding: 18px 0 0 0;
+    font-size: 0.9rem;
+    letter-spacing: -0.1px;
+    margin: 0;
+  }
+
+  &__price_red {
+    color: $base-red;
+    padding: 0 12px 0 6px;
+    margin-left: 4px;
+
+
+
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(transparent 11px,$base-red 5px,$base-red 12px,transparent 9px);
+    background-image:    -moz-linear-gradient(transparent 11px,$base-red 5px,$base-red 12px,transparent 9px);
+    background-image:     -ms-linear-gradient(transparent 11px,$base-red 5px,$base-red 12px,transparent 9px);
+    background-image:      -o-linear-gradient(transparent 11px,$base-red 5px,$base-red 12px,transparent 9px);
+    background-image:         linear-gradient(transparent 11px,$base-red 5px,$base-red 12px,transparent 9px);
+  }
+
+  &__prev-button {
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 60px;
+    width: 30px;
+
+    position: relative;
+    z-index: 3;
+
+    &:hover {
+      .slider-hits__prev-arrow {
+        fill: $base-brown;
+      }
+    }
+
+  }
+
+  &__prev-arrow {
+
+    height: 30px;
+    width: 38px;
+    position: absolute;
+    margin: -19px 0 0 -11px;
+    fill: #ebeaea;
+    transform: rotate(2.5turn);
+
+  }
+
+  &__next-button {
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 60px;
+    width: 30px;
+
+    position: relative;
+    z-index: 3;
+
+    &:hover {
+      .slider-hits__next-arrow {
+        fill: $base-brown;
+      }
+    }
+
+  }
+
+  &__next-arrow {
+
+    height: 30px;
+    width: 38px;
+    position: absolute;
+    margin: -19px 0 0 -31px;
+    fill: #ebeaea;
+    //transform: rotate(2.5turn);
+
+  }
+
+
+
+}

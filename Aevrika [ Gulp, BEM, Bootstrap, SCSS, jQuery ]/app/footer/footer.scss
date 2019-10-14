@@ -1,0 +1,278 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.footer {
+  justify-content: center;
+  background: #302a31;
+  color: white;
+
+  &__inner {
+    padding: 0;
+  }
+
+  &__navigation {
+    padding-bottom: 45px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: rgba(234, 232, 235, 0.2);
+
+    @include media-down-lg {
+      justify-content: center;
+    }
+  }
+
+  &__navigation-col1 {
+    padding-left: 22px;
+
+    @include media-down-xs{
+      padding: 0;
+    }
+
+    @include media-down-xxs {
+      text-align: center;
+    }
+  }
+
+  &__navigation-col2 {
+    padding-left: 16.6px;
+
+    @include media-down-xs{
+      padding: 0;
+    }
+
+    @include media-down-xxs {
+      text-align: center;
+    }
+  }
+
+  &__navigation-col3 {
+    padding-left: 7px;
+
+    @include media-down-xs {
+      text-align: center;
+    }
+  }
+
+  &__navigation-col4 {
+    padding: 0 2% 0 0;
+  }
+
+  &__col1-h3 {
+    padding-top: 75px;
+
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  &__col3-h3 {
+    padding-top: 71.5px;
+    padding-left: 3px;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+  }
+
+  &__col1-nav {
+    list-style: none;
+    padding-top: 20px;
+  }
+
+  &__col1-li {
+    padding: 0 0 2px 0;
+  }
+
+  &__col1-a {
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+
+    &:hover {
+      color: $base-brown;
+    }
+  }
+
+  &__col3-p {
+    padding-top: 10px;
+
+    font-size: 0.9rem;
+    letter-spacing: 0.1px;
+    line-height: 2.75;
+
+    margin: 0;
+  }
+
+  &__contacts-break {
+    display: none;
+
+    @include media-down-xxs {
+      display: block;
+    }
+  }
+
+  &__col3-schedule {
+    letter-spacing: 0.2px;
+  }
+
+  &__col3-ul {
+    list-style: none;
+    padding: 19px 0 0 3px;
+
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+  }
+
+  &__col3-li {
+    padding-bottom: 13px;
+  }
+
+  &__col3-a {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__col3-a2 {
+    letter-spacing: 2.1px;
+  }
+
+  &__col3-a3 {
+    letter-spacing: 1.86px;
+  }
+
+  &__col3-img-mail {
+    margin-left: -2px;
+    margin-right: 2px;
+  }
+
+  &__col4-h3 {
+    padding-left: 1px;
+  }
+
+  &__col4-email-input {
+    display: block;
+    width: 100%;
+
+    padding: 22px 0 14px 3px;
+
+    background: transparent;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: $base-brown;
+
+    font-size: 0.7rem;
+    letter-spacing: 1.75px;
+    color: white;
+  }
+
+  &__col4-email-submit {
+    display: block;
+    float: right;
+    margin-top: 26.5px;
+    margin-right: -3px;
+
+    background: transparent;
+    border: none;
+
+    font-size: 0.7rem;
+    color: $base-brown;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__col4-instagram {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 18px ;
+
+    width: 280px;
+    height: 50px;
+
+    align-items: center;
+
+    @include media-down-xs {
+      position: relative;
+      margin-bottom: 0;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+
+    @include  media-down-xxs {
+      margin-left: -25px;
+    }
+  }
+
+  &__col4-circle {
+    display: inline-flex;
+    width: 46px;
+    height: 46px;
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+
+    margin: 0 0 0px 3px;
+  }
+
+  &__col4-instagram-icon {
+    margin: 0 auto;
+    height: 25px;
+  }
+
+  &__col4-instagram-p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 22px;
+    padding-top: 2px;
+
+    font-size: 0.68rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.09px;
+  }
+
+  &__authors{
+    display: block;
+    padding: 40px 20px;
+
+    @include media-down-xs {
+      text-align: center;
+    }
+  }
+
+  &__copyrights {
+    display: inline-block;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+
+    @include media-down-xs {
+      display: block;
+    }
+  }
+
+  &__made-by {
+    display: inline-flex;
+    width: 315px;
+    padding-top: 3px;
+    float: right;
+    align-items: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.2px;
+
+    @include media-down-xs {
+      display: block;
+      float: none;
+      width: 100%;
+    }
+  }
+
+  &__made-by-p {
+    margin: 0;
+  }
+
+}

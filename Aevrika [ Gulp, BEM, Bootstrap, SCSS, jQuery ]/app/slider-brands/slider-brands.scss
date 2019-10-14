@@ -1,0 +1,130 @@
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_variables.scss";
+@import "/Users/michael/Documents/Code/WebStorm/Gulp-Test/app/_mixins.scss";
+
+.slider-brands {
+  padding: 9px 0 0 0;
+  display: block;
+
+  @include media-down-md {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__h2 {
+    padding-left: 2px;
+  }
+
+  &__h3 {
+    width: 92px;
+    margin: 0 auto;
+
+    font-size: 0.67rem;
+    font-weight: bold;
+    color: $base-brown;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+
+    padding: 31px 0 0 2px;
+
+    @include media-down-md {
+      display: none;
+    }
+
+  }
+
+  &__inner {
+    padding: 20px 0 0 11px;
+  }
+
+  &__slider-names {
+    display: inline-block;
+    width: 93%;
+  }
+
+  &__names-tab {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__names-img2 {
+    padding-left: 5px;
+  }
+
+  &__names-img3 {
+    padding-left: 5px;
+  }
+
+  &__names-img4 {
+    padding-top: 3px;
+  }
+
+  &__names-img5 {
+    margin-left: -3px;
+    padding-top: 2.5px;
+  }
+
+  &__names-img6 {
+    margin-left: -3px;
+    padding-top: 2.5px;
+  }
+
+  &__inner-lists {
+    padding: 20px 33px 0 35px;
+    justify-content: space-between;
+
+    @include media-down-lg {
+      padding-right: 33px;
+    }
+  }
+
+  &__slider-list {
+    display: inline-block;
+    width: 79.4%;
+    padding: 9px 0 0 0;
+
+    @include media-down-lg {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+    }
+  }
+
+  &__list-ul {
+    list-style: none;
+  }
+
+  &__list-ul1 {
+    padding-left: 1px;
+  }
+
+  &__list-ul2 {
+    padding-left: 1px;
+  }
+
+  &__list-ul3 {
+    margin: -1.7px 0 0 0;
+    padding-left: 8px;
+  }
+
+  &__list-ul4 {
+    padding-left: 8px;
+  }
+
+  &__list-ul5 {
+    padding-left: 8px;
+  }
+
+  &__list-a {
+    line-height: 2.3;
+    letter-spacing: 0.5px;
+    color: black;
+
+    &:hover {
+      cursor: pointer;
+      color: $base-brown;
+      text-decoration: none;
+    }
+  }
+}
