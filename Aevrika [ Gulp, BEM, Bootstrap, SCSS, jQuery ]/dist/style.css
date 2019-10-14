@@ -1086,17 +1086,17 @@ div.popUp {
     width: 252px;
     background: #ebebeb;
     background-image: url("images/stories__news-img1.png");
-    background-image: linear-gradient(270deg, #ebebeb, rgba(235, 235, 235, 0) 150%), url("images/stories__news-img1.png");
+    background-image: linear-gradient(270deg, #ebebeb, rgba(235, 235, 235, 0) 150%), url("../images/stories__news-img1.png");
     background-repeat: no-repeat; }
   .stories__news-img-wrap2 {
     margin-left: -5%;
     z-index: 1;
     background: #ebebeb;
     background-image: url("images/stories__news-img1.png");
-    background-image: linear-gradient(90deg, #ebebeb, rgba(235, 235, 235, 0) 130%), url("images/stories__news-img2.png");
+    background-image: linear-gradient(90deg, #ebebeb, rgba(235, 235, 235, 0) 130%), url("../images/stories__news-img2.png");
     background-repeat: no-repeat; }
   .stories__news-img-wrap3 {
-    background-image: linear-gradient(270deg, #ebebeb, rgba(235, 235, 235, 0) 150%), url("images/stories__news-img3.png"); }
+    background-image: linear-gradient(270deg, #ebebeb, rgba(235, 235, 235, 0) 150%), url("../images/stories__news-img3.png"); }
   .stories__news-text {
     display: inline-block;
     margin-left: -7.6%;
