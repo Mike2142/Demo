@@ -11,6 +11,9 @@ if (userName == null) {
     location.reload();
 } else if (userName === 'Админ') {
     Function();
+} else if (userName === '') {
+    alert('Введите имя пользователя');
+    location.reload();
 } else {
     alert('Давайте познакомимся позже =)');
     location.reload();
@@ -27,6 +30,9 @@ function Function() {
         alert('Добрый день!');
         alert('Повелитель JavaScript!')
         location.reload();
+    } else if (password === '') {
+        alert('Вы не ввели пароль');
+        Function();
     } else {
         alert('Неверный пароль');
         Function();
