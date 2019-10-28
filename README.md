@@ -13,5 +13,3 @@
 2surfingbirds@gmail.com
 
 +7-926-526-56-63
-
-[Telegram](https://t.me/MikeFlow108)
