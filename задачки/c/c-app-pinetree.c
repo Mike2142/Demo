@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// render pinetree in console =)
+
 int main(int argc, char **argv) {
   int n = atoi(argv[1]);
   
